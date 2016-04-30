@@ -1,3 +1,39 @@
 // Place all the styles related to the rooms controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+$font-stack:    Helvetica, sans-serif;
+$primary-color: #333;
+
+body {
+  font: 100% $font-stack;
+  color: $primary-color;
+
+  #messages {
+    margin-bottom: 20px;
+
+    .message {
+      clear: both;
+      .content {
+        font-color: red;
+        float: left;
+      }
+      .author {
+        float: right;
+        vertical-align: bottom;
+        font-size: 9px;
+      }
+      .created_at {
+        vertical-align: top;
+        font-size: 6px;
+        float: right;
+        padding: 0px 10px;
+      }
+    }
+  }
+  form#speak_form {
+    border-top: 1px solid $primary-color;
+    padding-top: 20px;
+    clear: both;
+  }
+}
