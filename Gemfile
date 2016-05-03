@@ -5,6 +5,8 @@ gem 'rails', '>= 5.0.0.beta4', '< 5.1'
 gem 'pg', '~> 0.15' # Use postgresql as the database for Active Record
 gem 'puma', '~> 3.0' # Use Puma as the app server
 gem 'letsencrypt_plugin', github: 'mathieujobin/letsencrypt-plugin'
+gem 'rollbar'
+gem 'oj', '~> 2.12.14'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
