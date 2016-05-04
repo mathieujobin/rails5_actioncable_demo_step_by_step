@@ -7,6 +7,7 @@ gem 'puma', '~> 3.0' # Use Puma as the app server
 gem 'letsencrypt_plugin', github: 'mathieujobin/letsencrypt-plugin'
 gem 'rollbar'
 gem 'oj', '~> 2.12.14'
+gem 'newrelic_rpm'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
