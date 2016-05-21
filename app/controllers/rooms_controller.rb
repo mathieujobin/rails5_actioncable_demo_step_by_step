@@ -12,6 +12,6 @@ class RoomsController < ApplicationController
     @room.save!
     #redirect_to action: 'show', id: @room
     @messages = @room.messages
-    render action :show
+    render action: :show
   end
 end
