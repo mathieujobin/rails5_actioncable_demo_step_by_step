@@ -1,0 +1,10 @@
+#welcome
+  #main
+    %h1 Live Chat Rooms
+    %p What would you like to chat about today?
+    %form#create_room{method: 'post', action: rooms_path}
+      %label Pick a subject:
+      %input{:type => "text"}/
+      %input{:type => "submit"}/
+  #rooms
+    = render @rooms
