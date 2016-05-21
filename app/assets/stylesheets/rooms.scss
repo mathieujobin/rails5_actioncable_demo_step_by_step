@@ -35,5 +35,8 @@ body {
     border-top: 1px solid $primary-color;
     padding-top: 20px;
     clear: both;
+    input {
+      width: 100%;
+    }
   }
 }
