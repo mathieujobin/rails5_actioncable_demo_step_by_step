@@ -22,3 +22,9 @@ Things you may want to cover:
 * Deployment instructions
 
 * ...
+
+
+https://www.sitepoint.com/action-cable-and-websockets-an-in-depth-tutorial/
+https://www.npmjs.com/package/actioncable
+https://www.godobject.net/articles/12
+
