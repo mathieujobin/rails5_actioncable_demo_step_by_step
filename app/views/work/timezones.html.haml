@@ -1,2 +1,5 @@
-%h1 Work#timezones
-%p Find me in app/views/work/timezones.html.haml
+%h1 Find out my work schedule.
+%p I wake up at 6, and usually work non step 8 to 5. When does that take place for you?
+%select#timezone_selector= options_for_select ActiveSupport::TimeZone.all
+
+#hey= @foo
