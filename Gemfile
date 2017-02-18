@@ -1,12 +1,15 @@
 source 'https://rubygems.org'
 ruby '2.3.3'
 
+# Bundler 1.x default to insecure http:// for github: shortcut
+git_source(:github){ |repo_name| "git@github.com:#{repo_name}.git" }
+
 gem 'rails', '>= 5.0.0.rc1', '< 5.1'
 gem 'pg', '~> 0.15' # Use postgresql as the database for Active Record
 gem 'puma', '~> 3.0' # Use Puma as the app server
 gem 'letsencrypt_plugin', github: 'mathieujobin/letsencrypt-plugin'
 gem 'rollbar'
-gem 'oj', '~> 2.12.14'
+gem 'oj', '~> 2.12'
 gem 'newrelic_rpm'
 
 # Use SCSS for stylesheets
@@ -14,7 +17,7 @@ gem 'sass-rails', '~> 5.0'
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 # Use CoffeeScript for .coffee assets and views
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails', '~> 4.1'
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -41,11 +44,9 @@ end
 group :development do
   # Access an IRB console on exception pages or by using <%= console %> anywhere in the code.
   gem 'web-console'
-  gem 'listen', '~> 3.0.5'
+  gem 'listen', '~> 3.0'
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 end
 
-# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
-gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
