@@ -1,4 +1,6 @@
 # PostgreSQL. Versions 8.2 and up are supported.
+# SQLite. Versions 3.8.0 and up are supported.
+#   gem install sqlite3
 #
 # Install the pg driver:
 #   gem install pg
@@ -15,11 +17,12 @@
 # gem 'pg'
 #
 default: &default
-  adapter: postgresql
+  adapter: <%= Rails.env.production? ? 'postgresql' : 'sqlite3' %>
   encoding: unicode
   # For details on connection pooling, see rails configuration guide
   # http://guides.rubyonrails.org/configuring.html#database-pooling
-  pool: 5
+  pool: <%= ENV.fetch("RAILS_MAX_THREADS") { 5 } %>
+  timeout: 5000
 
 development:
   <<: *default
