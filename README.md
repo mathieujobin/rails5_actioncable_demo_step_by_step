@@ -9,6 +9,7 @@ Things you may want to cover:
 2.7.2 or 3.0.0
 
 * System dependencies
+redis at least, a database for sure, probably several more things
 
 * Configuration
 
