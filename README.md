@@ -12,9 +12,9 @@ Things you may want to cover:
 redis at least, a database for sure, probably several more things
 
 * Configuration
-
+for sure you need
 * Database creation
-
+yes, please don't forget
 * Database initialization
 
 * How to run the test suite
